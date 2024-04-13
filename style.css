@@ -406,7 +406,7 @@ body {
     margin-left: .3rem;
 }
 
-.portfolio-box .info-box p:nth-child(1){
+.portfolio-box .info-box p:nth-of-type(1){
     font-weight: 600;
 }
 
@@ -419,6 +419,12 @@ body {
     margin: 0 1.15rem;
 }
 
+
+.contact-box{
+    text-align: center;
+}
+
+
 .contact-box .field{
     width: 100%;
     padding: .8rem;
@@ -428,4 +434,18 @@ body {
     font-size: 1rem;
     color: var(--text-color);
     margin-bottom: 1.5rem;
+}
+
+.contact-box .field::placeholder{
+    color: var(--text-color);
+}
+
+.contact-box textarea{
+    resize: none;
+    height: 15rem;
+}
+
+.contact-box .btn{
+    cursor: pointer;
+
 }
