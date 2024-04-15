@@ -8,7 +8,7 @@ pageTurnBtn.forEach((el, index) => {
 
         if (pageTurn.classList.contains('turn')) {
             pageTurn.classList.remove('turn');
-            setTimeout(() => { 
+            setTimeout(() => {
                 pageTurn.style.zIndex = 20 - index;
             }, 500)
         }
@@ -88,7 +88,7 @@ setTimeout(() => {
 
 
 
-pagespages.forEach((_, index) => { 
+pages.forEach((_, index) => { 
         setTimeout(() => { 
             reverseIndex();
             pages[pageNumber].classList.remove('turn');  
@@ -98,5 +98,5 @@ pagespages.forEach((_, index) => {
                 pages[pageNumber].style.zIndex = 10 + index;
             }, 500)
             
-            }, (index + 1) *200 + 100)
+            }, (index + 1) *200 + 2100)
         })
